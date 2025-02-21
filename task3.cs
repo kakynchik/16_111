@@ -1,39 +1,47 @@
-class Task3
+namespace _16_11
 {
-    public void Execute()
+    class Task3
     {
-        Console.Write("Enter a string for Caesar cipher encryption: ");
-        string inputText = Console.ReadLine();
-        Console.Write("Enter the shift value: ");
-        int shift = int.Parse(Console.ReadLine());
-
-        string encryptedText = CaesarCipher.Encrypt(inputText, shift);
-        string decryptedText = CaesarCipher.Decrypt(encryptedText, shift);
-
-        Console.WriteLine($"Encrypted text: {encryptedText}");
-        Console.WriteLine($"Decrypted text: {decryptedText}");
-    }
-}
-
-class CaesarCipher
-{
-    public static string Encrypt(string input, int shift)
-    {
-        char[] buffer = input.ToCharArray();
-        for (int i = 0; i < buffer.Length; i++)
+        public void Execute()
         {
-            if (char.IsLetter(buffer[i]))
+           Console.Write("Enter a string for Caesar cipher encryption: ");
+            string inputText = Console.ReadLine() ?? string.Empty;
+            Console.Write("Enter the shift value: ");
+            int shift;
+            while (!int.TryParse(Console.ReadLine(), out shift))
             {
-                char letter = buffer[i];
-                char offset = char.IsLower(letter) ? 'a' : 'A';
-                buffer[i] = (char)((((letter + shift) - offset) % 26) + offset);
+                Console.Write("Invalid input. Please enter a valid integer for the shift value: ");
             }
+
+            string encryptedText = CaesarCipher.Encrypt(inputText, shift);
+            string decryptedText = CaesarCipher.Decrypt(encryptedText, shift);
+
+            Console.WriteLine($"Encrypted text: {encryptedText}");
+            Console.WriteLine($"Decrypted text: {decryptedText}");
         }
-        return new string(buffer);
     }
 
-    public static string Decrypt(string input, int shift)
+    class CaesarCipher
     {
-        return Encrypt(input, 26 - shift);
+        public static string Encrypt(string input, int shift)
+        {
+            char[] buffer = input.ToCharArray();
+            for (int i = 0; i < buffer.Length; i++)
+            {
+                if (char.IsLetter(buffer[i]))
+                {
+                    char letter = buffer[i];
+                    char offset = char.IsLower(letter) ? 'a' : 'A';
+                    buffer[i] = (char)((((letter + shift) - offset) % 26) + offset);
+                }
+            }
+
+            return new string(buffer);
+        }
+
+        public static string Decrypt(string input, int shift)
+        {
+            return Encrypt(input, 26 - shift);
+        }
     }
 }
