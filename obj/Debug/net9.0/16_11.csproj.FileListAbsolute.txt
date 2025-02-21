@@ -1,0 +1,14 @@
+C:\Users\kiyos\RiderProjects\16_11\16_11\bin\Debug\net9.0\16_11.exe
+C:\Users\kiyos\RiderProjects\16_11\16_11\bin\Debug\net9.0\16_11.deps.json
+C:\Users\kiyos\RiderProjects\16_11\16_11\bin\Debug\net9.0\16_11.runtimeconfig.json
+C:\Users\kiyos\RiderProjects\16_11\16_11\bin\Debug\net9.0\16_11.dll
+C:\Users\kiyos\RiderProjects\16_11\16_11\bin\Debug\net9.0\16_11.pdb
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\16_11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\16_11.AssemblyInfoInputs.cache
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\16_11.AssemblyInfo.cs
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\16_11.csproj.CoreCompileInputs.cache
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\16_11.dll
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\refint\16_11.dll
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\16_11.pdb
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\16_11.genruntimeconfig.cache
+C:\Users\kiyos\RiderProjects\16_11\16_11\obj\Debug\net9.0\ref\16_11.dll
